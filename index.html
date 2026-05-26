@@ -191,14 +191,12 @@ What would you like to do next?</div>
     }, '*');
   }
   window.addEventListener('load', sendHeight);
-  window.addEventListener('resize', sendHeight);
   var retryCount = 0;
   var retryInterval = setInterval(function() {
     sendHeight();
     retryCount++;
     if (retryCount >= 6) clearInterval(retryInterval);
   }, 500);
-  
 </script>
 
   </body>
